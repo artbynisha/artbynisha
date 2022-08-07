@@ -1,0 +1,328 @@
+<html>
+
+<head>
+	<link rel="icon" href="logo/artbynisha.ico">
+	<title style="font-family:Noteworthy;">Art by Nisha</title>
+  <link rel="stylesheet" href="lightbox.css">
+<!------------------------------------- STYLE ------------------------------------------------------>
+<style>
+
+/* ------------------- Header ---------------------- */
+header {
+    	text-align:center;
+    	padding:2px; 
+}
+
+* {
+	box-sizing: border-box;}
+body {
+  	margin: 0;
+  	font-size: 28px;
+  	font-family: Noteworthy;}
+
+.header {
+  	background-color: #f1f1f1;
+  	padding: 30px;
+  	text-align: center;
+}
+/* ------------------- Nav Bar ---------------------- */
+#navbar {
+	width: 100%;
+	height: 10%;
+  	overflow: auto;
+}
+
+#navbar a {
+  	float: left;
+  	color: black;
+  	text-align: center;
+  	
+  	text-decoration: none;
+  	font-size: 20px;
+  	width: 33.33333333%;
+}
+
+#navbar a:hover {
+  	background-color: #CCC;
+  	color: black;
+}
+
+#navbar a.active {
+  	background-color: #000;
+  	color: #CCC;
+}
+
+@media screen and (max-width: 500px) {
+  	.navbar a {
+    	float: none;
+    	display: block;
+    	width: 100%;
+    	text-align: left;
+  }
+}
+/* ------------------- Sticky ---------------------- */
+.sticky {
+  	position: fixed;
+  	top: 0;
+  	width: 100%;
+}
+
+.sticky + .content {
+  	padding-top: 150px;
+}
+
+/* ------------------- Section ---------------------- */
+
+section {
+    	Font-family:Noteworthy;
+	Width:auto;
+  	padding:5px; 
+}
+/* ------------------- Photo Grid ---------------------- */
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+/* ------------------- Footer ---------------------- */
+footer {
+	font-family:Noteworthy;
+	position: sticky;
+	clear:both;
+   	text-align:center;
+	padding:5px; 
+}
+
+/*--------------------Slide Show--------------------- */
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+</head>
+
+
+<!------------------------------------------------ BODY -------------------------------------------->
+<body background="Background/Background.jpg">
+
+<!-------------- Header ------------------>
+<header>
+  <img src="logo/artbynishalogo.png" alt="ArtByNisha logo" width="250" height="225"/>
+</header>
+
+<!-------------- Nav Bar ------------------>
+<div id="navbar">
+  	<a class="active" href="index.html"><h3>HOME</h3></a>
+  	<a href="gallery.html"><h3>GALLERY</h3></a>
+  	<a href="contact.html"><h3>CONTACT</h3></a>
+</div>
+
+<!-------------- Slide Show ------------------>
+
+<!-------------- Photo Grid ------------------>
+<div class="row"> 
+  <div class="column">
+    <img src="Paintings/painting2.jpeg" style="width:100%">
+    <img src="Paintings/painting14.jpeg" style="width:100%">
+    <img src="Paintings/painting3.jpeg" style="width:100%">
+    <img src="Paintings/painting9.jpeg" style="width:100%">
+    <img src="Paintings/painting5.jpeg" style="width:100%">
+    <img src="Paintings/painting6.jpeg" style="width:100%">
+    <img src="Paintings/painting7.jpeg" style="width:100%">
+    <img src="Paintings/painting8.jpeg" style="width:100%">
+    <img src="Paintings/painting18.jpeg" style="width:100%">
+    <img src="Paintings/painting19.jpeg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="Paintings/painting4.jpeg" style="width:100%">
+    <img src="Paintings/painting10.jpeg" style="width:100%">
+    <img src="Paintings/painting17.jpeg" style="width:100%">
+    <img src="Paintings/painting13.jpeg" style="width:100%">
+    <img src="Paintings/painting1.jpeg" style="width:100%">
+    <img src="Paintings/painting15.jpeg" style="width:100%">
+    <img src="Paintings/painting16.jpeg" style="width:100%">
+    <img src="Paintings/painting12.jpeg" style="width:100%">
+    <!--<img src="Paintings/painting20.jpeg" style="width:100%">
+    <img src="Paintings/painting21.jpeg" style="width:100%">-->
+  </div>
+</div>
+<!-------------- Footer ------------------>
+<footer>
+<hr>
+</hr>
+	<a href="instagram.com"><img src="logo/instagram.png" alt="Instagram logo" width="40" height="36"/></a>
+	<a href="mailto:nishapatel170476@gmail.com"><img src="logo/mail.png" alt="Mail logo" width="40" height="36"/></a>
+	<br><img src="logo/artbynishalogo.png" alt="ArtByNisha logo" width="200" height="180"/>
+	<h6> <span style="font-size: 60%"> Logo by Janine Charoonruk </span> </h6>
+</footer>
+
+<!---------------------------------------------- SCRIPT -------------------------------------------->
+<script>
+  window.onscroll = function() {myFunction()};
+  
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  
+  function myFunction() 
+  {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+  </script>
+
+  <script src="lightbox-plus-jquery.js"></script>
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("demo");
+      let captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+</body>
+
+
+
+</html>
